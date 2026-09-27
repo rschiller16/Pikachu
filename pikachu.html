@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div class="card">
+
+        <div class="name">Pikachu</div>
+        <div class="hp">50 HP</div>
+
+        <div class="picture">
+            <div class="pikachu">
+
+                <div class="left-ear"></div>
+                <div class="right-ear"></div>
+
+                <div class="left-ear-tip"></div>
+                <div class="right-ear-tip"></div>
+
+                <div class="tail1"></div>
+                <div class="tail2"></div>
+                <div class="tail3"></div>
+
+                <div class="body"></div>
+                <div class="head"></div>
+
+                <div class="left-arm"></div>
+                <div class="right-arm"></div>
+
+                <div class="left-foot"></div>
+                <div class="right-foot"></div>
+
+                <div class="left-eye"></div>
+                <div class="right-eye"></div>
+
+                <div class="left-cheek"></div>
+                <div class="right-cheek"></div>
+
+                <div class="nose"></div>
+                <div class="mouth"></div>
+
+            </div>
+        </div>
+
+        <div class="basic">
+            <div class="basic-text">BASIC</div>
+            <div class="artist">Illus. Mitsuhiro Arita</div>
+        </div>
+
+        <div class="attack-area">
+            <div class="attack1">
+                <div class="attack-name">Scratch</div>
+                <div class="damage">10</div>
+            </div>
+
+            <div class="attack2">
+                <div class="attack-name">Pika Bolt</div>
+                <div class="damage">40</div>
+            </div>
+        </div>
+            <div class="weakness">weakness</div>
+            <div class="resistance">resistance</div>
+            <div class="retreat">retreat cost</div>
+        
+
+</body>
+    <style>
+        body {
+            margin: 0;
+            background-color: #e7e4e4;
+            font-family: Arial, sans-serif;
+        }
+
+        .card {
+            position: relative;
+            width: 350px;
+            height: 500px;
+            background-color: #f7d94c;
+            border: 10px solid #e7c62f;
+            border-radius: 22px;
+            margin: 40px;
+        }
+
+        /* TOP OF CARD */
+
+        .name {
+            position: absolute;
+            top: 12px;
+            left: 15px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .hp {
+            position: absolute;
+            top: 13px;
+            right: 15px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* PICTURE AREA */
+
+        .picture {
+            position: absolute;
+            top: 55px;
+            left: 20px;
+            width: 310px;
+            height: 185px;
+            background-color: #9fbce5;
+            border: 4px solid #c4a832;
+            z-index: 1;
+        }
+
+        .pikachu {
+            position: relative;
+            width: 150px;
+            height: 170px;
+            margin-left: 95px;
+            margin-top: 10px;
+            z-index: 2;
+        }
+
+        /* TAIL */
+
+        .tail1 {
+            position: absolute;
+            width: 35px;
+            height: 20px;
+            background-color: #ffec5d;
+            right: 0;
+            top: 85px;
+            border: 2px solid #b99d17;
+            z-index: 1;
+        }
+
+        .tail2 {
+            position: absolute;
+            width: 20px;
+            height: 35px;
+            background-color: #ffec5d;
+            right: 5px;
+            top: 65px;
+            border: 2px solid #b99d17;
+            z-index: 1;
+        }
+
+        .tail3 {
+            position: absolute;
+            width: 35px;
+            height: 20px;
+            background-color: #ffec5d;
+            right: -15px;
+            top: 50px;
+            border: 2px solid #b99d17;
+            z-index: 1;
+        }
+
+        /* EARS */
+
+        .left-ear {
+            position: absolute;
+            width: 24px;
+            height: 65px;
+            background-color: #ffec5d;
+            border: 2px solid #b99d17;
+            border-radius: 15px;
+            left: 30px;
+            top: 0;
+            z-index: 2;
+        }
+
+        .right-ear {
+            position: absolute;
+            width: 24px;
+            height: 65px;
+            background-color: #ffec5d;
+            border: 2px solid #b99d17;
+            border-radius: 15px;
+            right: 30px;
+            top: 0;
+            z-index: 2;
+        }
+
+        .left-ear-tip {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #000000;
+            border-radius: 15px;
+            left: 34px;
+            top: 2px;
+            z-index: 3;
+        }
+
+        .right-ear-tip {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background-color: #000000;
+            border-radius: 15px;
+            right: 34px;
+            top: 2px;
+            z-index: 3;
+        }
+
+        /* BODY */
+
+        .body {
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            background-color: #ffec5d;
+            border: 2px solid #b99d17;
+            border-radius: 45px;
+            left: 30px;
+            top: 75px;
+            z-index: 3;
+        }
+
+        .head {
+            position: absolute;
+            width: 100px;
+            height: 85px;
+            background-color: #ffec5d;
+            border: 2px solid #b99d17;
+            border-radius: 45px;
+            left: 25px;
+            top: 30px;
+            z-index: 4;
+        }
+
+        /* ARMS */
+
+        .left-arm {
+            position: absolute;
+            width: 20px;
+            height: 50px;
+            background-color: #ffec5d;
+            border: 2px solid #b99d17;
+            border-radius: 15px;
+            left: 25px;
+            top: 92px;
+            z-index: 5;
+        }
+
+        .right-arm {
+            position: absolute;
+            width: 20px;
+            height: 50px;
+            background-color: #ffec5d;
+            border: 2px solid #b99d17;
+            border-radius: 15px;
+            right: 25px;
+            top: 92px;
+            z-index: 5;
+        }
+
+        /* FEET */
+
+        .left-foot {
+            position: absolute;
+            width: 38px;
+            height: 18px;
+            background-color: #ffec5d;
+            border: 2px solid #b99d17;
+            border-radius: 15px;
+            left: 20px;
+            bottom: 0;
+            z-index: 5;
+        }
+
+        .right-foot {
+            position: absolute;
+            width: 38px;
+            height: 18px;
+            background-color: #ffec5d;
+            border: 2px solid #b99d17;
+            border-radius: 15px;
+            right: 20px;
+            bottom: 0;
+            z-index: 5;
+        }
+
+        /* FACE */
+
+        .left-eye {
+            position: absolute;
+            width: 10px;
+            height: 13px;
+            background-color: #000000;
+            border-radius: 50%;
+            left: 48px;
+            top: 57px;
+            z-index: 6;
+        }
+
+        .right-eye {
+            position: absolute;
+            width: 10px;
+            height: 13px;
+            background-color: #000000;
+            border-radius: 50%;
+            right: 48px;
+            top: 57px;
+            z-index: 6;
+        }
+
+        .left-cheek {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            background-color: #db1313;
+            border-radius: 50%;
+            left: 30px;
+            top: 70px;
+            z-index: 6;
+        }
+
+        .right-cheek {
+            position: absolute;
+            width: 18px;
+            height: 18px;
+            background-color: #db1313;
+            border-radius: 50%;
+            right: 30px;
+            top: 70px;
+            z-index: 6;
+        }
+
+        .nose {
+            position: absolute;
+            width: 6px;
+            height: 5px;
+            background-color: #000000;
+            border-radius: 50%;
+            left: 72px;
+            top: 74px;
+            z-index: 6;
+        }
+
+         .mouth {
+            position: absolute;
+            width: 20px;
+            height: 5px;
+            background-color: #000000;
+            border-radius: 50%;
+            left: 65px;
+            top: 100px;
+            z-index: 6;
+        }
+
+        /* BASIC BAR */
+
+        .basic {
+            position: absolute;
+            top: 242px;
+            left: 20px;
+            width: 310px;
+            height: 20px;
+            background-color: #fdfdfd;
+            border: 2px solid #ceb85f;
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .basic-text {
+            position: absolute;
+            left: 10px;
+            top: 5px;
+        }
+
+        .artist {
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            font-size: 10px;
+            font-weight: normal;
+        }
+
+        /* ATTACK AREA */
+
+        .attack-area {
+            position: absolute;
+            top: 265px;
+            left: 35px;
+            width: 285px;
+            height: 180px;
+            background-color: #fff9b3;
+            border: 2px solid #b4ae54;
+            border-radius: 15px;
+        }
+
+        .attack1 {
+            position: absolute;
+            top: 35px;
+            left: 20px;
+            width: 245px;
+            height: 45px;
+        }
+
+        .attack2 {
+            position: absolute;
+            top: 105px;
+            left: 20px;
+            width: 245px;
+            height: 45px;
+        }
+
+        .attack-name {
+            position: absolute;
+            left: 10px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .damage {
+            position: absolute;
+            right: 5px;
+            font-size: 20px;
+        }
+
+        /*Bottom of card*/
+
+        .weakness {
+            position: absolute;
+            bottom: 18px;
+            left: 35px;
+            font-size: 12px;
+            font-weight: bold;
+}
+
+    .resistance {
+            position: absolute;
+            bottom: 18px;
+            left: 135px;
+            font-size: 12px;
+            font-weight: bold;
+}
+
+    .retreat {
+            position: absolute;
+            bottom: 18px;
+            right: 35px;
+            font-size: 12px;
+            font-weight: bold;
+}
+    </style>
+</html>
